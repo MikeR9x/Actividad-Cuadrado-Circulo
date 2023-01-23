@@ -2,10 +2,19 @@
 //Programa de Miguel Angel Reyes Contreras ID:178139
 
 public class Circulo {
-	public int radio = 178139;
+	public int radio;
 	public double circunferencia;
 	public double area;
-	public String nombre = "hello";
+	
+	
+	public Circulo() {
+		this(178139);
+	}
+	
+	 public Circulo(int ID) {
+		radio = ID;
+	}
+	
 	
 	public double calcularArea(){
 		return area = Math.PI*(Math.pow(radio, 2));
